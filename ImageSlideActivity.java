@@ -36,6 +36,8 @@ public class ImageSlideActivity extends Activity implements View.OnClickListener
         findViewById(R.id.btnPrevious).setOnClickListener(this);
         findViewById(R.id.btnNext).setOnClickListener(this);
 
+        imgView.setImageResource(imgList[0]);
+
     }
 
     @Override

@@ -30,7 +30,7 @@ public class ImageListActivity extends ListActivity {
 
         String selectedValue = (String) getListAdapter().getItem(position);
 
-        Toast.makeText(this, selectedValue, Toast.LENGTH_LONG).show();
+       // Toast.makeText(this, selectedValue, Toast.LENGTH_LONG).show();
 
     }
 }

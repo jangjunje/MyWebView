@@ -17,6 +17,7 @@ public class IntroActivity extends Activity implements View.OnClickListener {
         ((Button) findViewById(R.id.btImgView)).setOnClickListener(this);
         ((Button) findViewById(R.id.btImgSlide)).setOnClickListener(this);
         ((Button) findViewById(R.id.btImgList)).setOnClickListener(this);
+        ((Button) findViewById(R.id.btImgGrid)).setOnClickListener(this);
     }
 
     @Override
@@ -33,6 +34,9 @@ public class IntroActivity extends Activity implements View.OnClickListener {
                 break;
             case R.id.btImgList:
                 startActivity(new Intent(this, ImageListActivity.class));
+                break;
+            case R.id.btImgGrid:
+                startActivity(new Intent(this, ImageGridActivity.class));
                 break;
         }
     }

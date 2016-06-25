@@ -25,8 +25,11 @@ public class ArrAdapter extends android.widget.ArrayAdapter<String> {
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
         View rowView = inflater.inflate(R.layout.activity_imag_list, parent, false);
-        TextView textView = (TextView) rowView.findViewById(R.id.label);
+
         ImageView imgView = (ImageView) rowView.findViewById(R.id.logo);
+        TextView textView = (TextView) rowView.findViewById(R.id.label);
+
+
         textView.setText(values[position]);
 
         String s = values[position];
@@ -58,6 +61,7 @@ public class ArrAdapter extends android.widget.ArrayAdapter<String> {
                 break;
         }
 
-        return super.getView(position, convertView, parent);
+        //return super.getView(position, convertView, parent);
+        return null;
     }
 }
