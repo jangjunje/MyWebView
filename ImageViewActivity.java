@@ -11,7 +11,7 @@ public class ImageViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image_view);
 
-        ImageView imgView = (ImageView) findViewById(R.id.imgView);
-        imgView.setImageResource(R.drawable.tulips);
+//        ImageView imgView = (ImageView) findViewById(R.id.imgView);
+//        imgView.setImageResource(R.drawable.tulips);
     }
 }
